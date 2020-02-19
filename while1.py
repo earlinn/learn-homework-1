@@ -11,11 +11,17 @@
 
 
 def ask_user():
-    """
-    Замените pass на ваш код
-    """
-    pass
+    while True:
+        usver_say = input(f'Как дела? ')
+        if usver_say == 'Хорошо':
+            break
+        else:
+            print(f'В смысле {usver_say.lower()}?')
+
+
+def main():
+    ask_user()
 
     
 if __name__ == "__main__":
-    ask_user()
+    main()
