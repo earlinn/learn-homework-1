@@ -12,12 +12,13 @@
 
 def ask_user():
     while True:
-        usver_say = input(f'Как дела? ')
+        print('Как дела?')
+        usver_say = input()
         if usver_say == 'Хорошо':
-            break
-        else:
-            print(f'В смысле {usver_say.lower()}?')
-
+            return
+        usver_say = usver_say.lower()
+        print(f'В смысле {usver_say}?')
+    
 
 def main():
     ask_user()
