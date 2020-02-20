@@ -9,19 +9,17 @@
    
 """
 
-
 def ask_user():
+    usver_say = input('Как дела?\n')
     while True:
-        print('Как дела?')
-        usver_say = input()
         if usver_say == 'Хорошо':
-            return
+            return 'Пока!'
         usver_say = usver_say.lower()
-        print(f'В смысле {usver_say}?')
-    
+        usver_say = input(f'В смысле {usver_say}?\n')
+
 
 def main():
-    ask_user()
+    print(ask_user())
 
     
 if __name__ == "__main__":
