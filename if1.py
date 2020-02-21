@@ -13,19 +13,18 @@
 * Вывести содержимое переменной на экран
 
 """
+def what_can_i_do(age):
+    if 2.4 <= age < 7:
+        return 'Дуй в садик!'
+    elif 7 <= age <= 17:
+        return 'Пора в школу!'
+    elif 17 < age <= 23:
+        return 'Тебе к первой паре!'
+    elif age > 23:
+        return 'Кто не работает, тот ест!'
+
 
 def main():
-    def what_can_i_do(age):
-        if 2.4 <= age < 7: # the lower age as at https://www.mos.ru/mayor/themes/1299/5739050/
-            return 'Дуй в садик!'
-        elif 7 <= age <= 17:
-            return 'Пора в школу!'
-        elif 17 < age <= 23:
-            return 'Тебе к первой паре!'
-        elif age > 23:
-            return 'Кто не работает, тот ест!'
-    
-    
     where_to_learn = what_can_i_do(int(input()))
     print(where_to_learn)
 

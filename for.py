@@ -56,7 +56,7 @@ def main():
         print('- минимальное число учеников в классе,')
         print('- максимальное число учеников в классе')
         my_school = list(map(int, input().split()))
-        if my_school[1] < 1 or my_school[2] < 1:
+        if my_school[0] < 1 or my_school[1] < 1 or my_school[2] < 1:        
             raise ValueError
         if my_school[1] > my_school[2]:
             raise ValueError
@@ -72,7 +72,7 @@ def main():
         for classroom in my_school:
             print(class_grade_point_average(classroom['school_class'], \
                 classroom['scores']))
-    except:
+    except ValueError:
         print('\n' + 'Вводите только натуральные числа,' + '\n' \
             + 'максимум должен быть больше минимума,' + '\n' \
                 + 'не забывайте пробел.')
