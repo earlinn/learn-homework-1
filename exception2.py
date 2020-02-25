@@ -15,10 +15,10 @@
 def get_summ(num_one, num_two):
     try:
         summ = int(num_one) + int(num_two)
-        return summ
     except ValueError:
         return 'Приведение типов не сработало.'
-    
+    return summ
+
   
 def main():
     print(get_summ(2, 2))
